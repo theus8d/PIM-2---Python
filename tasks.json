@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile-c",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-shared", "-o", "calculo_medias.dll", "calculo_medias.c",
+                "-fPIC", "-O2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}
